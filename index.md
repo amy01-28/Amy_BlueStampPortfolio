@@ -66,14 +66,94 @@ Here's where you'll put your code. The syntax below places it into a block of co
 
 ```c++
 void setup() {
-  // put your setup code here, to run once:
-  Serial.begin(9600);
-  Serial.println("Hello World!");
+ Serial.begin(9600);
+  horizontal.attach(5);
+  vertical.attach(6);
+  horizontal.write(90);
+  vertical.write(45);
+  delay(3000);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+int tr = analogRead(ldrTR); 
+  int tl = analogRead(ldrTL); 
+  int br = analogRead(ldrBR); 
+  int bl = analogRead(ldrBL); 
 
+  int dtime = 0; 
+  int tol = 50;
+
+  int avt = (tl + tr) / 2; 
+  int avd = (bl + br) / 2; 
+  int avl = (tl + bl) / 2; 
+  int avr = (tr + br) / 2; 
+  int dvert = avt - avd;  
+  int dhoriz = avl - avr;
+ Serial.print(tl);
+  Serial.print(" ");
+  Serial.print(tr);
+  Serial.print(" ");
+  Serial.print(bl);
+  Serial.print(" ");
+  Serial.print(br);
+  Serial.print("  ");
+  Serial.print(avt);
+  Serial.print(" ");
+  Serial.print(avd);
+  Serial.print(" ");
+  Serial.print(avl);
+  Serial.print(" ");
+  Serial.print(avr);
+  Serial.print("  ");
+  Serial.print(dtime);
+  Serial.print("   ");
+  Serial.print(tol);
+  Serial.print("  ");
+  Serial.print(servov);
+  Serial.print("   ");
+  Serial.print(servoh);
+  Serial.println(" ");
+
+
+  if (-1 * tol > dvert || dvert > tol) {
+    if (avt > avd) {
+      servov = ++servov;
+      if (servov > servovLimitHigh) {
+        servov = servovLimitHigh;
+      }
+    }
+    else if (avt < avd) {
+      servov = --servov;
+      if (servov < servovLimitLow) {
+        servov = servovLimitLow;
+      }
+    }
+    vertical.write(servov);
+  }
+
+ 
+  if (-1 * tol > dhoriz || dhoriz > tol) {
+    if (avl > avr) {
+      servoh = --servoh;
+      if (servoh < servohLimitLow) {
+        servoh = servohLimitLow;
+      }
+    }
+    else if (avl < avr) {
+      servoh = ++servoh;
+      if (servoh > servohLimitHigh) {
+        servoh = servohLimitHigh;
+      }
+    }
+    else if (avl = avr) {
+    
+    }
+    horizontal.write(servoh);
+  }
+  
+  delay(dtime);
+  
+}
 }
 ```
 
@@ -83,13 +163,13 @@ Don't forget to place the link of where to buy each component inside the quotati
 
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+| Dual Axis Tracker 3.0 Kit |Solar Tracker|$150| https://www.browndoggadgets.com/products/dual-axis-smart-solar-tracker
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 
 # Other Resources/Examples
 One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
-- [Example 1](https://trashytuber.github.io/YimingJiaBlueStamp/)
+-https://learn.browndoggadgets.com/Guide/Dual+Axis+Solar+Tracker+3.0/382
 - [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
 - [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
 
