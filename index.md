@@ -7,7 +7,7 @@ You should comment out all portions of your portfolio that you have not complete
 <!--- Anything between these symbols will not render on the published site -->
 ```
 
-|Name| Valley Chrisitan High School| **Area of Interest** | Grade |
+|Name| School name| **Area of Interest** | Grade |
 |:--:|:--:|:--:|:--:|
 | Amy(Seoyeon) K | Valley Christian High School | Chemical,Mechanical Engineering | Rising Junior
 
