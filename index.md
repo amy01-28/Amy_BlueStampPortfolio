@@ -52,6 +52,9 @@ For your first milestone, describe what your project is and how you plan to buil
 - Technical progress you've made so far
 - Challenges you're facing and solving in your future milestones
 - What your plan is to complete your project
+  # Starter Project
+  My stater project is the BlueStampengineering arduino Beginner. It's necessary part for the robotics, which would be helpful to learn about circuit and coding through this project.
+  I had problem for uploading the code I made. When I try to verify the code I made, it is compiled well but there was some error in circuit. I did not use the resistor which should be always together with the LED. When trying to install the resistor with them, it should be 220ohm but I could not find the resistor with that exact number, I replaced two of 110 ohm with 220 ohm one by twisting two of them to make it pretned to be one. 
 
 # Schematics 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
