@@ -4,9 +4,6 @@ It is the tracker which detects where the sun light shines so that it can conver
 This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were.
 You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
 ```HTML 
-<!--- This is an HTML comment in Markdown -->
-<!--- Anything between these symbols will not render on the published site -->
-```
 
 |Name| School name| **Area of Interest** | Grade |
 |:--:|:--:|:--:|:--:|
