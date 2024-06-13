@@ -2,8 +2,7 @@
 It is the tracker which detects where the sun light shines so that it can convert from the solar energy to eletric energy. 
 
 This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were.
-You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
-```HTML 
+
 
 |Name| School name| **Area of Interest** | Grade |
 |:--:|:--:|:--:|:--:|
@@ -150,7 +149,7 @@ int tr = analogRead(ldrTR);
 }
 }
 ```
-
+-->
 # Bill of Materials
 Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
 Don't forget to place the link of where to buy each component inside the quotation marks in the corresponding row after href =. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize this to your project needs. 
@@ -164,8 +163,7 @@ Don't forget to place the link of where to buy each component inside the quotati
 One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
 -https://learn.browndoggadgets.com/Guide/Dual+Axis+Solar+Tracker+3.0/382
 - [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
-- [Example 3](https://arneshkumar.github.io/arneshbluestamp/) -->
-
+- [Example 3](https://arneshkumar.github.io/arneshbluestamp/) 
 # Starter Project
  <iframe width="560" height="315" src="https://youtu.be/LpYfZG2CoQc?si=Ga2jpFTxIxN872-R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
