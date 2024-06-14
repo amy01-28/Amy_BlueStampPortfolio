@@ -1,5 +1,5 @@
 # Solar Tracker
-It is the tracker which detects where the sun light shines so that it can convert from the solar energy to eletric energy. 
+It is the tracker which detects where the sun light shines so that it can convert from the solar energy to eletric energy. It have the function to charge it, so you can charge the smartphone battery only using the solar energy. Also, you can check the other information about the environment such as the temperature or humidity things. 
 
 <!---This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were.-->
 
@@ -155,13 +155,14 @@ int tr = analogRead(ldrTR);
 
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
-| Dual Axis Tracker 3.0 Kit |Solar Tracker|$150| https://www.browndoggadgets.com/products/dual-axis-smart-solar-tracker
-
+| Dual Axis Tracker 3.0 Kit |Solar Tracker|$150| https://www.browndoggadgets.com/products/dual-axis-smart-solar-tracker | 
+|Solar USB kit 2.0|Solar Tracker USB charger|$40|https://www.browndoggadgets.com/products/solar-usb-kit-2-0|
 
 # Other Resources/Examples
 <!---One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.-->
--https://learn.browndoggadgets.com/Guide/Dual+Axis+Solar+Tracker+3.0/382
-- https://www.hackster.io/FIELDING/solar-panel-sun-tracker-phone-charger-f669ce
+https://learn.browndoggadgets.com/Guide/Dual+Axis+Solar+Tracker+3.0/382
+https://www.hackster.io/FIELDING/solar-panel-sun-tracker-phone-charger-f669ce
+https://learn.browndoggadgets.com/Guide/Solar+USB+Charger+2.0/6?lang=en
 <!---   [Example 3](https://arneshkumar.github.io/arneshbluestamp/) -->
 # Starter Project
  <iframe width="560" height="315" src="https://youtu.be/LpYfZG2CoQc?si=Ga2jpFTxIxN872-R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
