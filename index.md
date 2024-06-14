@@ -1,7 +1,7 @@
 # Solar Tracker
 It is the tracker which detects where the sun light shines so that it can convert from the solar energy to eletric energy. 
 
-This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were.
+<! ---This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. -->
 
 
 |Name| School name| **Area of Interest** | Grade |
@@ -151,7 +151,7 @@ int tr = analogRead(ldrTR);
 ```
 -->
 # Bill of Materials
-([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize this to your project needs. 
+<!---([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize this to your project needs. -->
 
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
@@ -159,10 +159,10 @@ int tr = analogRead(ldrTR);
 
 
 # Other Resources/Examples
-One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
+<!---One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.-->
 -https://learn.browndoggadgets.com/Guide/Dual+Axis+Solar+Tracker+3.0/382
 - https://www.hackster.io/FIELDING/solar-panel-sun-tracker-phone-charger-f669ce
-- [Example 3](https://arneshkumar.github.io/arneshbluestamp/) 
+<!---   [Example 3](https://arneshkumar.github.io/arneshbluestamp/) -->
 # Starter Project
  <iframe width="560" height="315" src="https://youtu.be/LpYfZG2CoQc?si=Ga2jpFTxIxN872-R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -170,4 +170,4 @@ One of the best parts about Github is that you can view how other people set up 
   I had problem for uploading the code I made. When I verify the code I made, it is compiled well but it's not uploaded. I did not use the resistor which should be always together with the LED. When trying to install the resistor with them, it should be 220 ohm but I could not find the resistor with that exactly same number, I replaced two of 110 ohm with 220 ohm one by twisting two of them to make it pretned to be one. Even though the circuit and codes are all correct, it was not working. I tried to figure it out by changing new arduino, new breadboard and disassembling the shield that I soldered. And finally we figure it out what was the probelm, which was the lack of power so we add the wire connect to voltage 5.
 
 
-To watch the BSE tutorial on how to create a portfolio, click here.
+<!---To watch the BSE tutorial on how to create a portfolio, click here. -->
