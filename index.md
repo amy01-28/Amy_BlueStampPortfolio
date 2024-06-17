@@ -160,9 +160,9 @@ int tr = analogRead(ldrTR);
 
 # Other Resources/Examples
 <!---One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.-->
-https://learn.browndoggadgets.com/Guide/Dual+Axis+Solar+Tracker+3.0/382
-https://www.hackster.io/FIELDING/solar-panel-sun-tracker-phone-charger-f669ce
-https://learn.browndoggadgets.com/Guide/Solar+USB+Charger+2.0/6?lang=en
+-https://learn.browndoggadgets.com/Guide/Dual+Axis+Solar+Tracker+3.0/382
+-https://www.hackster.io/FIELDING/solar-panel-sun-tracker-phone-charger-f669ce
+-https://learn.browndoggadgets.com/Guide/Solar+USB+Charger+2.0/6?lang=en
 <!---   [Example 3](https://arneshkumar.github.io/arneshbluestamp/) -->
 # Starter Project
  <iframe width="560" height="315" src="https://youtu.be/LpYfZG2CoQc?si=Ga2jpFTxIxN872-R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
