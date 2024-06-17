@@ -8,7 +8,7 @@ It is the tracker which detects where the sun light shines so that it can conver
 |:--:|:--:|:--:|:--:|
 | Amy(Seoyeon) K | Valley Christian High School | Chemical,Mechanical Engineering | Rising Junior
 
-**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
+<!---**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.** -->
 
 ![Headstone Image](logo.svg)
   
