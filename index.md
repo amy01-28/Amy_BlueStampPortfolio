@@ -194,7 +194,7 @@ void  loop(){
 ```
 # Bill of Material
 | **Part** | **Note** | **Price** | **Link** |
-|:--:|:--:|:--:|:--:|
+
 | Arduino|Arudino|$150| https://www.browndoggadgets.com/products/dual-axis-smart-solar-tracker |
 |LED|3mm Red LED| ||
 |BreadBoard|Breadboard|||
