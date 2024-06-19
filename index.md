@@ -162,6 +162,9 @@ int tr = analogRead(ldrTR);
 -https://learn.browndoggadgets.com/Guide/Dual+Axis+Solar+Tracker+3.0/382
 -https://www.hackster.io/FIELDING/solar-panel-sun-tracker-phone-charger-f669ce
 -https://learn.browndoggadgets.com/Guide/Solar+USB+Charger+2.0/6?lang=en
+-https://www.hackster.io/FIELDING/solar-panel-sun-tracker-phone-charger-f669ce
+-https://www.instructables.com/Dual-Axis-Tracker-V20/
+-https://www.instructables.com/Solar-phone-charging-system-featuring-sun-tracking/
 <!---   [Example 3](https://arneshkumar.github.io/arneshbluestamp/) -->
 # Starter Project
  <iframe width="560" height="315" src="https://youtu.be/LpYfZG2CoQc?si=Ga2jpFTxIxN872-R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -169,5 +172,35 @@ int tr = analogRead(ldrTR);
   My starter project is the BlueStamp engineering arduino Beginner. It's necessary part for the robotics, which would be helpful to learn about circuit and coding through this project.
   I had problem for uploading the code I made. When I verify the code I made, it is compiled well but it's not uploaded. I did not use the resistor which should be always together with the LED. When trying to install the resistor with them, it should be 220 ohm but I could not find the resistor with that exactly same number, I replaced two of 110 ohm with 220 ohm one by twisting two of them to make it pretned to be one. Even though the circuit and codes are all correct, it was not working. I tried to figure it out by changing new arduino, new breadboard and disassembling the shield that I soldered. And finally we figure it out what was the probelm, which was the lack of power so we add the wire connect to voltage 5.
 
+#Code
+```c++
+const int bt = 2; //button pin
+const int led = 13; //LED pin
+int Btst = 0; //the first button state before starting
+
+void  setup(){
+  pinMode(bt, INPUT);
+  pinMode(led, OUTPUT);
+}
+
+void  loop(){
+  btst = digitalRead(bt);
+  if (btst == HIGH){
+    digitalWrite(led, HIGH);
+  } 
+  else{
+    digitalWrite(led,  LOW);
+  }
+}
+#Bill of Material
+| **Part** | **Note** | **Price** | **Link** |
+|:--:|:--:|:--:|:--:|
+| Arduino|Arudino|$150| https://www.browndoggadgets.com/products/dual-axis-smart-solar-tracker |
+|LED|3mm Red LED| |:--:|
+|BreadBoard|Breadboard|:--:|:--:|
+|5 pin female header|2 of 5 pin female 0.1" header (1x6)|   |:--:|
+|8 pin female header|2 of 8 pin female 0.1" header(1x8)|:--:|:--:|
+|Reset S1|6mm tact switch|2 of 6mm tact switch|:--:|  |
+|Resistor|470-1.0K Resistors for LED Carbon 5% 1/4W | 2 of the resistor| | |
 
 <!---To watch the BSE tutorial on how to create a portfolio, click here. -->
