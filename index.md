@@ -192,13 +192,13 @@ void  loop(){
   }
 }
 ```
-# Bill of Material
+# Bill of Materials
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
 | Arduino|Arudino|$150| https://www.browndoggadgets.com/products/dual-axis-smart-solar-tracker |
 |LED|3mm Red LED| ||
 |BreadBoard|Breadboard|||
-|5 pin female header|2 of 5 pin female 0.1" header (1x6)|   | |
+|5 pin female header|2 of 5 pin female 0.1" header (1x6)|   |   |
 |Reset S1|6mm tact switch|2 of 6mm tact switch||  |
 |Resistor|470-1.0K Resistors for LED Carbon 5% 1/4W | 2 of the resistor| | |
 
