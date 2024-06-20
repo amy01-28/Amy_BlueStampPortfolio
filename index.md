@@ -154,13 +154,13 @@ int tr = analogRead(ldrTR);
 |Solar USB kit 2.0|Solar Tracker USB charger|$40|https://www.browndoggadgets.com/products/solar-usb-kit-2-0|
 
 # Other Resources/Examples
-*https://learn.browndoggadgets.com/Guide/Dual+Axis+Solar+Tracker+3.0/382
-*https://www.hackster.io/FIELDING/solar-panel-sun-tracker-phone-charger-f669ce
-*https://learn.browndoggadgets.com/Guide/Solar+USB+Charger+2.0/6?lang=en
-*https://www.hackster.io/FIELDING/solar-panel-sun-tracker-phone-charger-f669ce
-*https://www.instructables.com/Dual-Axis-Tracker-V20/
-*https://www.instructables.com/Solar-phone-charging-system-featuring-sun-tracking/
-*https://chargehq.net/kb/solar-tracking-settings
+* https://learn.browndoggadgets.com/Guide/Dual+Axis+Solar+Tracker+3.0/382
+* https://www.hackster.io/FIELDING/solar-panel-sun-tracker-phone-charger-f669ce
+* https://learn.browndoggadgets.com/Guide/Solar+USB+Charger+2.0/6?lang=en
+* https://www.hackster.io/FIELDING/solar-panel-sun-tracker-phone-charger-f669ce
+* https://www.instructables.com/Dual-Axis-Tracker-V20/
+* https://www.instructables.com/Solar-phone-charging-system-featuring-sun-tracking/
+* https://chargehq.net/kb/solar-tracking-settings
 
 # Starter Project
  <iframe width="560" height="315" src="https://www.youtube.com/embed/LpYfZG2CoQc?si=6JxsjkRi9CZVnVa_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
