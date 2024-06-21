@@ -59,20 +59,20 @@ void setup() {
 
 void loop() {
 int tr = analogRead(ldrTR); 
-  int tl = analogRead(ldrTL); 
-  int br = analogRead(ldrBR); 
-  int bl = analogRead(ldrBL); 
+int tl = analogRead(ldrTL); 
+int br = analogRead(ldrBR); 
+int bl = analogRead(ldrBL); 
 
-  int dtime = 0; 
-  int tol = 50;
+int dtime = 0; 
+int tol = 50;
 
-  int avt = (tl + tr) / 2; 
-  int avd = (bl + br) / 2; 
-  int avl = (tl + bl) / 2; 
-  int avr = (tr + br) / 2; 
-  int dvert = avt - avd;  
-  int dhoriz = avl - avr;
- Serial.print(tl);
+int avt = (tl + tr) / 2; 
+int avb = (bl + br) / 2; 
+int avl = (tl + bl) / 2; 
+int avr = (tr + br) / 2; 
+int dvert = avt - avd;  
+int dhoriz = avl - avr;
+  Serial.print(tl);
   Serial.print(" ");
   Serial.print(tr);
   Serial.print(" ");
@@ -82,7 +82,7 @@ int tr = analogRead(ldrTR);
   Serial.print("  ");
   Serial.print(avt);
   Serial.print(" ");
-  Serial.print(avd);
+  Serial.print(avb);
   Serial.print(" ");
   Serial.print(avl);
   Serial.print(" ");
@@ -98,7 +98,7 @@ int tr = analogRead(ldrTR);
   Serial.println(" ");
 
 
-  if (-1 * tol > dvert || dvert > tol) {
+  if (abs(tol)<abs(dvert)) {
     if (avt > avd) {
       servov = ++servov;
       if (servov > servovLimitHigh) {
@@ -115,8 +115,7 @@ int tr = analogRead(ldrTR);
   }
 
  
-  if (-1 * tol > dhoriz || dhoriz > tol) {
-    if (avl > avr) {
+  if (abs(tol)<abs(dhoriz)) {
       servoh = --servoh;
       if (servoh < servohLimitLow) {
         servoh = servohLimitLow;
