@@ -46,9 +46,10 @@ I will fix the problem in the servo so that it can rotate depending on the senso
 
 
 
-<!---# Schematics 
-Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
--->
+# Schematics 
+https://d3t0tbmlie281e.cloudfront.net/igi/browndoggadgets/GyUWXuovyjBIDOTV.large
+
+
 # Code
 <!---Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. -->
 
