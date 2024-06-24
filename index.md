@@ -165,7 +165,7 @@ int dhoriz = avl - avr;  //difference of right and left
 |Solar USB kit 2.0|Solar Tracker USB charger|$40|https://www.browndoggadgets.com/products/solar-usb-kit-2-0|
 
 # Other Resources/Examples
-* https://learn.browndoggadgets.com/Guide/Dual+Axis+Solar+Tracker+3.0/382-instruction for solar tracker kit
+* https://learn.browndoggadgets.com/Guide/Dual+Axis+Solar+Tracker+3.0/382?lang=en-instruction for solar tracker kit
 * https://www.hackster.io/FIELDING/solar-panel-sun-tracker-phone-charger-f669ce
 * https://learn.browndoggadgets.com/Guide/Solar+USB+Charger+2.0/6?lang=en - instruction for solar usb box kit
 * https://www.hackster.io/FIELDING/solar-panel-sun-tracker-phone-charger-f669ce
