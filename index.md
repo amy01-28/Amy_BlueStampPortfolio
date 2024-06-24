@@ -22,13 +22,15 @@ For your final milestone, explain the outcome of your project. Key details to in
 - What you've accomplished since your previous milestone
 - What your biggest challenges and triumphs were at BSE
 - A summary of key topics you learned about
-- What you hope to learn in the future after everything you've learned at BSE
+- What you hope to learn in the future after everything you've learned at BSE -->
 
 
 
 # Second Milestone
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wntJOIwsdMw?si=buplrxJSqPQrK0lx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+The goal for my second milestone is to solve the issue for the servo. Two of the servos which are on top and the bottom were not working at all. When I get rid of the arduino and connect the servos on the shield, they were working well. However, the sensors are working well on the arduino but not shield so I cannot even use the breadboard to connect them togehter. By using the electrical tester, I tried to find out which connection is weak, and the batteries were the problem so I replaced them with new big one to give bigger power to shield. After that, servo on the top was working well according to the code but the other one is not woring well. It is rotating in the wrong way. It seems to be reading the code for the top servo. The fundamental issue was in the arduino and the battery. Their ground were different, which make the arduino confusing. That's why servos read the code wrongly. 
 
 
 
@@ -48,31 +50,43 @@ https://d3t0tbmlie281e.cloudfront.net/igi/browndoggadgets/GyUWXuovyjBIDOTV.large
 <!---Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. -->
 
 ```c++
+#include <Servo.h>
+
+Servo horizontal;   //horizontal servo setting
+int servoh = 90;    //initial horizontal servo angle would be 90 degrees you can change any value you want
+int servoLimitHigh =180;  //the maximum angle of the horizontal servo angle
+int servohLimitLow = 0;   //minimum angle of the horizontal servo angle
+
+Servo vertical;   //vertical servo setting
+int servov= 90;   // initial vertical servo angle would be 90 degrees you can change any value you want
+int servovLimitHigh =130;  // the maximum anlge of the vertical servo angle
+int servovLimitLow = 20;   //the minimum angle of the vertical servo angle
+
 void setup() {
- Serial.begin(9600);
-  horizontal.attach(5);
-  vertical.attach(6);
-  horizontal.write(90);
-  vertical.write(45);
-  delay(3000);
+ Serial.begin(9600);   // setting for the computer printing speed
+  horizontal.attach(5);   // pin number of the horizontal servo 
+  vertical.attach(6);     // pin number of the vertical servo
+  horizontal.write(90);   // servo.write(angle) so this setting means the horizontal servo would rotate to 90 degrees
+  vertical.write(45);    //the vertical servo would rotate to 45 degrees
+  delay(3000);            // rotating for 3 seconds 1000 is a second
 }
 
-void loop() {
+void loop() {    // setting 4 sensors which are top right top bottom bottom right bottom left
 int tr = analogRead(ldrTR); 
 int tl = analogRead(ldrTL); 
 int br = analogRead(ldrBR); 
 int bl = analogRead(ldrBL); 
 
-int dtime = 0; 
-int tol = 50;
+int dtime = 0; // change for debugging only
+int tol = 50;  // tolerance
 
-int avt = (tl + tr) / 2; 
-int avb = (bl + br) / 2; 
-int avl = (tl + bl) / 2; 
-int avr = (tr + br) / 2; 
-int dvert = avt - avd;  
-int dhoriz = avl - avr;
-  Serial.print(tl);
+int avt = (tl + tr) / 2;  //average value top
+int avb = (bl + br) / 2; //average value bottom
+int avl = (tl + bl) / 2; //average value left
+int avr = (tr + br) / 2; //average value right
+int dvert = avt - avd;  //difference of top and down
+int dhoriz = avl - avr;  //difference of right and left
+  Serial.print(tl);   //computer printing the value of them on Serial monitor
   Serial.print(" ");
   Serial.print(tr);
   Serial.print(" ");
@@ -97,33 +111,36 @@ int dhoriz = avl - avr;
   Serial.print(servoh);
   Serial.println(" ");
 
-
-  if (abs(tol)<abs(dvert)) {
-    if (avt > avd) {
-      servov = ++servov;
-      if (servov > servovLimitHigh) {
-        servov = servovLimitHigh;
+//vertical servo and sensors
+  if (abs(tol)<abs(dvert)) {   //if the absolute value of dvert is bigger than the tolerance
+    if (avt > avb) {         
+      servov = ++servov;        //servo should be going up
+      if (servov > servovLimitHigh) {  // servo angle should not be bigger than the maximum angle
+       servov = servovLimitHigh;  
       }
     }
-    else if (avt < avd) {
-      servov = --servov;
-      if (servov < servovLimitLow) {
+    else if (avt < avb) {  
+      servov = --servov;   // servo should be going down
+      if (servov < servovLimitLow) {  //servo should not be smaller than the minimum angle
         servov = servovLimitLow;
       }
+    }
+    else if(avt =avb ) {
     }
     vertical.write(servov);
   }
 
  
-  if (abs(tol)<abs(dhoriz)) {
-      servoh = --servoh;
-      if (servoh < servohLimitLow) {
+  if (abs(tol)<abs(dhoriz)); { //if the absolute value of dhoriz is bigger than the tolerance
+    if (avl > avr){ 
+      servoh = --servoh;  //horizontal servo should be going down
+      if (servoh < servohLimitLow) {  // servo anlge should not be bigger than the minimum angle
         servoh = servohLimitLow;
       }
     }
-    else if (avl < avr) {
-      servoh = ++servoh;
-      if (servoh > servohLimitHigh) {
+    else if (avl < avr) {  
+      servoh = ++servoh; //vertical servo should be going up
+      if (servoh > servohLimitHigh) {  //servo angle should not be bigger than the maximum anlge
         servoh = servohLimitHigh;
       }
     }
@@ -148,9 +165,9 @@ int dhoriz = avl - avr;
 |Solar USB kit 2.0|Solar Tracker USB charger|$40|https://www.browndoggadgets.com/products/solar-usb-kit-2-0|
 
 # Other Resources/Examples
-* https://learn.browndoggadgets.com/Guide/Dual+Axis+Solar+Tracker+3.0/382
+* https://learn.browndoggadgets.com/Guide/Dual+Axis+Solar+Tracker+3.0/382-instruction for solar tracker kit
 * https://www.hackster.io/FIELDING/solar-panel-sun-tracker-phone-charger-f669ce
-* https://learn.browndoggadgets.com/Guide/Solar+USB+Charger+2.0/6?lang=en
+* https://learn.browndoggadgets.com/Guide/Solar+USB+Charger+2.0/6?lang=en - instruction for solar usb box kit
 * https://www.hackster.io/FIELDING/solar-panel-sun-tracker-phone-charger-f669ce
 * https://www.instructables.com/Dual-Axis-Tracker-V20/
 * https://www.instructables.com/Solar-phone-charging-system-featuring-sun-tracking/
