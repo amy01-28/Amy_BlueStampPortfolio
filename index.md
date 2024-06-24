@@ -44,7 +44,7 @@ I will fix the problem in the servo so that it can rotate depending on the senso
 
 # Schematics 
 https://d3t0tbmlie281e.cloudfront.net/igi/browndoggadgets/GyUWXuovyjBIDOTV.large
-![Schematics Image}(dualaxis.pdf).
+![Schematics Image](dualaxis.pdf).
 
 
 # Code
