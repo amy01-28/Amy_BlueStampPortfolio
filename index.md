@@ -170,12 +170,16 @@ int dhoriz = avl - avr;  //difference of right and left
    instruction for solar tracker kit
 * https://www.instructables.com/Dual-Axis-Tracker-V20/
    more information and explanation about solar tracker
-* https://www.youtube.com/watch?v=C6vZFio-rkw&t=475s
-   solar usb instruction video
 * https://learn.browndoggadgets.com/Guide/Solar+USB+Charger+2.0/6?lang=en
   instruction for solar usb box kit
+* https://www.instructables.com/Solar-USB-Charger-20-21/
+  more information and explanation about solar solar usb charger box kit
+* https://www.youtube.com/watch?v=C6vZFio-rkw&t=475s
+   solar usb instruction video
 * https://www.hackster.io/FIELDING/solar-panel-sun-tracker-phone-charger-f669ce
    the idea for combining usb charger circuit and solar tracker
+* https://www.instructables.com/Reading-While-Standing/
+  the smartphone stand for charging
 * https://chargehq.net/kb/solar-tracking-settings
   blutooth
 
