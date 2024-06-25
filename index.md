@@ -164,8 +164,7 @@ int dhoriz = avl - avr;  //difference of right and left
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
 | Dual Axis Tracker 3.0 Kit |Solar Tracker|$150| https://www.browndoggadgets.com/products/dual-axis-smart-solar-tracker | 
-|Charging usb circuit|The part of the Solar Usb Charger 2.0 kit o|$40|https://www.browndoggadgets.com/products/solar-usb-kit-, https://www.ebay.com/itm/296490056840?_trkparms=amclksrc%3DITM%26aid%3D1110018%26algo%3DHOMESPLICE.COMPLISTINGS%26ao%3D1%26asc%3D266916%2C267607%26meid%3Dfee0a334bc1445b0800d0d7e441da276%26pid%3D101196%26rk%3D3%26rkt%3D12%26sd%3D404845034338%26itm%3D296490056840%26pmt%3D1%26noa%3D0%26pg%3D2332490%26algv%3DCompVIDesktopATF2V6%26brand%3DUnbranded&_trksid=p2332490.c101196.m2219&itmprp=cksum%3A296490056840fee0a334bc1445b0800d0d7e441da276%7Cenc%3AAQAJAAAA8GAdA8t7FtElKI2ebmtGeyFMNX7PfMWQov7CwR6Fgp%252FM1xanPTAI8JxipoMPIZxnO5wGD92r9cVYj759QOIqhE4lmd3aacHYJx8y0Gl1%252F9%252FdmNojC0FX68qlkjUX2LFpZSgkNMEt9%252F3V%252BBeimsGITNdO%252BwYeF2lix8VddWqJQkC6025ylM8uU42Pz%252BXu4wcFOyhRYT4l2HHnRw%252BGERNa9sXjARx%252By5o6nT5kPwzFQWvISu0La12BzX82WXnwMeA6tzTQPoBAoCBtrFgrRxn4znULLFTFUx8uuczQkmOWkFy%252BW2UDbJHxKFdk%252BlWXEKHI%252Bw%253D%253D%7Campid%3APL_CLK%7Cclp%3A2332490&itmmeta=01J18VDQFPR0442DXR5HCWN6F8|
-# Other Resources/Examples
+|Charging usb circuit|The part of the Solar Usb Charger 2.0 kit o|$40|https://www.browndoggadgets.com/products/solar-usb-kit-|
 * https://learn.browndoggadgets.com/Guide/Dual+Axis+Solar+Tracker+3.0/382?lang=en -
    instruction for solar tracker kit
 * https://www.instructables.com/Dual-Axis-Tracker-V20/
