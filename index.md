@@ -165,12 +165,18 @@ int dhoriz = avl - avr;  //difference of right and left
 | Dual Axis Tracker 3.0 Kit |Solar Tracker|$150| https://www.browndoggadgets.com/products/dual-axis-smart-solar-tracker | 
 |Charging usb circuit|The part in |$40|https://www.browndoggadgets.com/products/solar-usb-kit-
 # Other Resources/Examples
-* https://learn.browndoggadgets.com/Guide/Dual+Axis+Solar+Tracker+3.0/382?lang=en - instruction for solar tracker kit
-* https://www.hackster.io/FIELDING/solar-panel-sun-tracker-phone-charger-f669ce - the idea for combining usb charger circuit and solar tracker
-* https://learn.browndoggadgets.com/Guide/Solar+USB+Charger+2.0/6?lang=en - instruction for solar usb box kit
-* https://www.instructables.com/Dual-Axis-Tracker-V20/ - more information and explanation about solar tracker
-* https://www.instructables.com/Solar-phone-charging-system-featuring-sun-tracking/  - more information and explanation about solar usb
-* https://chargehq.net/kb/solar-tracking-settings - charging 
+* https://learn.browndoggadgets.com/Guide/Dual+Axis+Solar+Tracker+3.0/382?lang=en -
+   instruction for solar tracker kit
+* https://www.instructables.com/Dual-Axis-Tracker-V20/
+   more information and explanation about solar tracker
+* https://www.youtube.com/watch?v=C6vZFio-rkw&t=475s
+   solar usb instruction video
+* https://learn.browndoggadgets.com/Guide/Solar+USB+Charger+2.0/6?lang=en
+  instruction for solar usb box kit
+* https://www.hackster.io/FIELDING/solar-panel-sun-tracker-phone-charger-f669ce
+   the idea for combining usb charger circuit and solar tracker
+* https://chargehq.net/kb/solar-tracking-settings
+  blutooth
 
 # Starter Project
  <iframe width="560" height="315" src="https://www.youtube.com/embed/LpYfZG2CoQc?si=6JxsjkRi9CZVnVa_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
