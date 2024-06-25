@@ -14,9 +14,7 @@ It is the tracker which detects where the sun light shines so that it can conver
 
 
 # Modification
-
-
-
+Modification of solar tracker would be 3D design print. I will make the smartphone stand for charging.
 
 
 # Final Milestone
