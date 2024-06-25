@@ -11,18 +11,16 @@ It is the tracker which detects where the sun light shines so that it can conver
 <!---**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.** -->
 
 ![Headstone Image](logo.svg)
-  
+
+
+# Modification
 <!---# Final Milestone
+<iframe width="560" height="315" src="https://www.youtube.com/embed/F-98sx0Hl4M?si=e1t5iBG4Xr7GGMaA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-For your final milestone, explain the outcome of your project. Key details to include are:
-- What you've accomplished since your previous milestone
-- What your biggest challenges and triumphs were at BSE
-- A summary of key topics you learned about
-- What you hope to learn in the future after everything you've learned at BSE -->
+The goal for the final milestone is to make the solar tracker available to charge phone. My project is basically tracking sunshine and converting solar power to electrical power. After 4 of the sensors on the top left, top right, bottom left, and bottom right are detecting the sunshine. Whenever they detect the sunshine, the value of numbers they measured are used for calculating and the computer decided which servo should be moving which direction according to the code. When the solar tracker is facing the sun, the solar power from the solar panel is converted to electrical energy so that I can charge an device using the charging usb circuit connected to the wire on the solar panel. 
+The challenge in this milestone was weak connection between usb circuit and solar panel. Even though I soldered in the right way, the multimeter is saying that is wrong. The problem was the little amount of lead between negative and positive terminal on the usb circuit. Because of that, I replaced it with new one and add pin to make sure the connection strong. 
+->
 
 
 
@@ -48,7 +46,7 @@ I will fix the problem in the servo so that it can rotate depending on the senso
 
 
 # Code
-<!---Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. -->
+
 
 ```c++
 #include <Servo.h>
@@ -163,7 +161,7 @@ int dhoriz = avl - avr;  //difference of right and left
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
 | Dual Axis Tracker 3.0 Kit |Solar Tracker|$150| https://www.browndoggadgets.com/products/dual-axis-smart-solar-tracker | 
-|Charging usb circuit|The part in |$40|https://www.browndoggadgets.com/products/solar-usb-kit-
+|Charging usb circuit|The part of the Solar Usb Charger 2.0 kit o|$40|https://www.browndoggadgets.com/products/solar-usb-kit-, https://www.ebay.com/itm/296490056840?_trkparms=amclksrc%3DITM%26aid%3D1110018%26algo%3DHOMESPLICE.COMPLISTINGS%26ao%3D1%26asc%3D266916%2C267607%26meid%3Dfee0a334bc1445b0800d0d7e441da276%26pid%3D101196%26rk%3D3%26rkt%3D12%26sd%3D404845034338%26itm%3D296490056840%26pmt%3D1%26noa%3D0%26pg%3D2332490%26algv%3DCompVIDesktopATF2V6%26brand%3DUnbranded&_trksid=p2332490.c101196.m2219&itmprp=cksum%3A296490056840fee0a334bc1445b0800d0d7e441da276%7Cenc%3AAQAJAAAA8GAdA8t7FtElKI2ebmtGeyFMNX7PfMWQov7CwR6Fgp%252FM1xanPTAI8JxipoMPIZxnO5wGD92r9cVYj759QOIqhE4lmd3aacHYJx8y0Gl1%252F9%252FdmNojC0FX68qlkjUX2LFpZSgkNMEt9%252F3V%252BBeimsGITNdO%252BwYeF2lix8VddWqJQkC6025ylM8uU42Pz%252BXu4wcFOyhRYT4l2HHnRw%252BGERNa9sXjARx%252By5o6nT5kPwzFQWvISu0La12BzX82WXnwMeA6tzTQPoBAoCBtrFgrRxn4znULLFTFUx8uuczQkmOWkFy%252BW2UDbJHxKFdk%252BlWXEKHI%252Bw%253D%253D%7Campid%3APL_CLK%7Cclp%3A2332490&itmmeta=01J18VDQFPR0442DXR5HCWN6F8|
 # Other Resources/Examples
 * https://learn.browndoggadgets.com/Guide/Dual+Axis+Solar+Tracker+3.0/382?lang=en -
    instruction for solar tracker kit
@@ -178,7 +176,7 @@ int dhoriz = avl - avr;  //difference of right and left
 * https://chargehq.net/kb/solar-tracking-settings
   blutooth
 
-# Starter Project
+# Starter Project: Arduino Beginner
  <iframe width="560" height="315" src="https://www.youtube.com/embed/LpYfZG2CoQc?si=6JxsjkRi9CZVnVa_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
   My starter project is the BlueStamp engineering arduino Beginner. It's necessary part for the robotics, which would be helpful to learn about circuit and coding through this project.
