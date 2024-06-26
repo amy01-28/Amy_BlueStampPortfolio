@@ -12,8 +12,7 @@ It is the tracker which detects where the sun light shines so that it can conver
 
 
 # Modification
-Modification of solar tracker would be printed 3D design. I designed the phone stand To charge device easily using solar tracker, the phone stand 
-
+Modification of solar tracker would be printed 3D design. I designed the phone stand to charge device easily using solar tracker.
 # Final Milestone
 
 
@@ -44,7 +43,7 @@ I will fix the problem in the servo so that it can rotate depending on the senso
 Charging USB circuit
 ![Schematics Image](solarusbcircuit.JPG)
 
-Solar tracker circuit
+
 ![Schematics](dualaxis1.JPG)
 
 # Code
