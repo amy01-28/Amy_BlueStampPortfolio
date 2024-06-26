@@ -10,8 +10,6 @@ It is the tracker which detects where the sun light shines so that it can conver
 
 <!---**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.** -->
 
-![Headstone Image](logo.svg)
-
 
 # Modification
 Modification of solar tracker would be 3D design print. I will make the smartphone stand for charging.
@@ -45,6 +43,8 @@ I will fix the problem in the servo so that it can rotate depending on the senso
 # Schematics 
 
 ![Schematics Image](dualaxis.pdf)
+![Schematics Image](solarusbcircuit.JPG)
+
 
 
 # Code
