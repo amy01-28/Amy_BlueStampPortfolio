@@ -216,12 +216,8 @@ void  loop(){
 
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
-| Arduino|Arudino|$150| https://www.browndoggadgets.com/products/dual-axis-smart-solar-tracker |
-|LED|3mm Red LED| a|a|
-|BreadBoard|Breadboard|a|a|
-|5 pin female header|2 of 5 pin female 0.1" header (1x6)|  a |  a |
-|Reset S1|6mm tact switch|2 of 6mm tact switch|a| a |
-|Resistor|470-1.0K Resistors for LED Carbon 5% 1/4W | 2 of the resistor| a| a|
+| Arduino Beginner kit|kit |$150| https://learn.adafruit.com/adafruit-proto-shield-arduino|
+
 
 
 <!---To watch the BSE tutorial on how to create a portfolio, click here. -->
