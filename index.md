@@ -40,7 +40,7 @@ I will fix the problem in the servo so that it can rotate depending on the senso
 
 
 # Schematics 
-![Schematics Image](dualaxis1.JPG)
+![Schematics Image](finaldualaxis.JPG)
 
 ![Schematics Image](solarusbcircuit.JPG)
 
@@ -163,7 +163,7 @@ int dhoriz = avl - avr;  //difference of right and left
 |:--:|:--:|:--:|:--:|
 | Dual Axis Tracker 3.0 Kit |Solar Tracker|$150| https://www.browndoggadgets.com/products/dual-axis-smart-solar-tracker | 
 |Charging usb circuit|The part of the Solar Usb Charger 2.0 kit|$40|https://www.browndoggadgets.com/products/solar-usb-kit-|
-|Charging usb circuit(you can choose to buy the solar usb charger kit or just just only usb circuit)|3V to 5V 1A USB Charger for Phone DC-DC Converter Step Up Boost Module|$4.77|https://www.ebay.com/itm/296490056840?_trkparms=amclksrc%3DITM%26aid%3D1110018%26algo%3DHOMESPLICE.COMPLISTINGS%26ao%3D1%26asc%3D266916%2C267607%26meid%3Dccc369c2d5cb45eb8d66be30cd4dc0d1%26pid%3D101196%26rk%3D4%26rkt%3D12%26sd%3D404845034338%26itm%3D296490056840%26pmt%3D1%26noa%3D0%26pg%3D2332490%26algv%3DCompVIDesktopATF2V6%26brand%3DUnbranded&_trksid=p2332490.c101196.m2219&itmprp=cksum%3A296490056840ccc369c2d5cb45eb8d66be30cd4dc0d1%7Cenc%3AAQAJAAAA8GAdA8t7FtElKI2ebmtGeyFMNX7PfMWQov7CwR6Fgp%252FM1xanPTAI8JxipoMPIZxnO5wGD92r9cVYj759QOIqhE4lmd3aacHYJx8y0Gl1%252F9%252FdmNojC0FX68qlkjUX2LFpZSgkNMEt9%252F3V%252BBeimsGITNeh%252FYngyRyQ4P9XibXV0s4UmFxjT8xq%252FGWbwVj1kIVHsPOkFde5jgbqFER4x2fWdp6qtuz12RRKh9UVsBW6ov5mUWdgNY9Vi0UBVmeaZ4Ha2hE25zw2Ag1H58hubvuUGNtnORzYC3Xz76oKR50zSGG1ONFjZZhcllCTa%252FofYRO6IA%253D%253D%7Campid%3APL_CLK%7Cclp%3A2332490&itmmeta=01J18W9XMRGY69HNFFDGGETMBY|
+|Charging usb circuit(you can choose to buy the solar usb charger kit or just just only usb circuit)|3V to 5V 1A USB Charger for Phone DC-DC Converter Step Up Boost Module|$4.77|<a href= "https://www.ebay.com/itm/296490056840?_trkparms=amclksrc%3DITM%26aid%3D1110018%26algo%3DHOMESPLICE.COMPLISTINGS%26ao%3D1%26asc%3D266916%2C267607%26meid%3Dccc369c2d5cb45eb8d66be30cd4dc0d1%26pid%3D101196%26rk%3D4%26rkt%3D12%26sd%3D404845034338%26itm%3D296490056840%26pmt%3D1%26noa%3D0%26pg%3D2332490%26algv%3DCompVIDesktopATF2V6%26brand%3DUnbranded&_trksid=p2332490.c101196.m2219&itmprp=cksum%3A296490056840ccc369c2d5cb45eb8d66be30cd4dc0d1%7Cenc%3AAQAJAAAA8GAdA8t7FtElKI2ebmtGeyFMNX7PfMWQov7CwR6Fgp%252FM1xanPTAI8JxipoMPIZxnO5wGD92r9cVYj759QOIqhE4lmd3aacHYJx8y0Gl1%252F9%252FdmNojC0FX68qlkjUX2LFpZSgkNMEt9%252F3V%252BBeimsGITNeh%252FYngyRyQ4P9XibXV0s4UmFxjT8xq%252FGWbwVj1kIVHsPOkFde5jgbqFER4x2fWdp6qtuz12RRKh9UVsBW6ov5mUWdgNY9Vi0UBVmeaZ4Ha2hE25zw2Ag1H58hubvuUGNtnORzYC3Xz76oKR50zSGG1ONFjZZhcllCTa%252FofYRO6IA%253D%253D%7Campid%3APL_CLK%7Cclp%3A2332490&itmmeta=01J18W9XMRGY69HNFFDGGETMBY">Solar tracker</a>|
 
 # Resources
 
