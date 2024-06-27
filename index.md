@@ -167,7 +167,8 @@ int dhoriz = avl - avr;  //difference of right and left
 
 # Resources
 
-* https://learn.browndoggadgets.com/Guide/Dual+Axis+Solar+Tracker+3.0/382?lang=en -
+* https://learn.browndoggadgets.com/Guide/Dual+Axis+Solar+Tracker+3.0/382?lang=en
+
    instruction for solar tracker kit
   
 * https://www.instructables.com/Dual-Axis-Tracker-V20/
