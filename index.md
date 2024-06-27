@@ -40,12 +40,12 @@ I will fix the problem in the servo so that it can rotate depending on the senso
 
 
 # Schematics 
+![Schematics Image](dualaxis1.JPG)
 
-Charging USB circuit
 ![Schematics Image](solarusbcircuit.JPG)
 
 
-![Schematics](dualaxis1.JPG)
+
 
 # Code
 
