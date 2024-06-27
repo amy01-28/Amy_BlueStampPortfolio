@@ -13,8 +13,9 @@ It is the tracker which detects where the sun light shines so that it can conver
 
 # Modification
 Modification of solar tracker would be printed 3D design. I designed the phone stand to charge device easily using solar tracker.
-# Final Milestone
 
+# Final Milestone
+<iframe width="560" height="315" src="https://www.youtube.com/embed/F-98sx0Hl4M?si=xLZvhWE17DNHBbtE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 The goal for the final milestone is to make the solar tracker available to charge phone. My project is basically tracking sunshine and converting solar power to electrical power. After 4 of the sensors on the top left, top right, bottom left, and bottom right are detecting the sunshine. Whenever they detect the sunshine, the value of numbers they measured are used for calculating and the computer decided which servo should be moving which direction according to the code. When the solar tracker is facing the sun, the solar power from the solar panel is converted to electrical energy so that I can charge an device using the charging usb circuit connected to the wire on the solar panel. 
 The challenge in this milestone was weak connection between usb circuit and solar panel. Even though I soldered in the right way, the multimeter is saying that is wrong. The problem was the little amount of lead between negative and positive terminal on the usb circuit. Because of that, I replaced it with new one and add pin to make sure the connection strong. 
