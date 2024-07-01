@@ -64,43 +64,65 @@ I will fix the problem in the servo so that it can rotate depending on the senso
 
 
 ```c++
-#include <Servo.h>
 
-Servo horizontal;   //horizontal servo setting
-int servoh = 90;    //initial horizontal servo angle would be 90 degrees you can change any value you want
-int servoLimitHigh =180;  //the maximum angle of the horizontal servo angle
-int servohLimitLow = 0;   //minimum angle of the horizontal servo angle
+#include <ServoTimer2.h>
 
-Servo vertical;   //vertical servo setting
-int servov= 90;   // initial vertical servo angle would be 90 degrees you can change any value you want
-int servovLimitHigh =130;  // the maximum anlge of the vertical servo angle
-int servovLimitLow = 20;   //the minimum angle of the vertical servo angle
+// horizontal servo
+ServoTimer2 horizontal;
+int servoh = 90;
+
+int servohLimitHigh = 180;
+int servohLimitLow = 0;
+
+ServoTimer2 vertical;
+int servov = 90;
+
+int servovLimitHigh = 110;
+int servovLimitLow = 20;
+// 4 of LDR pin setting
+int ldrTR = A0; // LDR top right
+int ldrTL = A1; // LDR top left
+int ldrBR = A2; // LDR bottom right
+int ldrBL = A3; // LDR bottom left
+
+#include <AltSoftSerial.h>
+AltSoftSerial mySerial (3,2); 
 
 void setup() {
- Serial.begin(9600);   // setting for the computer printing speed
-  horizontal.attach(5);   // pin number of the horizontal servo 
-  vertical.attach(6);     // pin number of the vertical servo
-  horizontal.write(90);   // servo.write(angle) so this setting means the horizontal servo would rotate to 90 degrees
-  vertical.write(45);    //the vertical servo would rotate to 45 degrees
-  delay(3000);            // rotating for 3 seconds 1000 is a second
+  Serial.begin(9600);
+  // servo connections
+  horizontal.attach(6);
+  vertical.attach(5);
+  // move servos
+  horizontal.write(90);
+  vertical.write(90);
+  delay(3000);
+
+mySerial.begin(9600); 
 }
 
-void loop() {    // setting 4 sensors which are top right top bottom bottom right bottom left
-int tr = analogRead(ldrTR); 
-int tl = analogRead(ldrTL); 
-int br = analogRead(ldrBR); 
-int bl = analogRead(ldrBL); 
 
-int dtime = 0; // change for debugging only
-int tol = 50;  // tolerance
+void loop() {
 
-int avt = (tl + tr) / 2;  //average value top
-int avb = (bl + br) / 2; //average value bottom
-int avl = (tl + bl) / 2; //average value left
-int avr = (tr + br) / 2; //average value right
-int dvert = avt - avd;  //difference of top and down
-int dhoriz = avl - avr;  //difference of right and left
-  Serial.print(tl);   //computer printing the value of them on Serial monitor
+  int tr = analogRead(ldrTR); // top right
+  int tl = analogRead(ldrTL); // top left
+  int br = analogRead(ldrBR); // bottom right
+  int bl = analogRead(ldrBL); // bottom left
+
+  int dtime = 0; // change for debugging only
+  int tol = 50;
+
+  int avt = (tl + tr) / 2; // average value top
+  int avb = (bl + br) / 2; // average value bottom
+  int avl = (tl + bl) / 2; // average value left
+  int avr = (tr + br) / 2; // average value right
+
+  int dvert = avt - avb;  // check the difference of up and down
+  int dhoriz = avl - avr; // check the difference of left and right
+
+
+  // send data to the serial monitor if desired
+  Serial.print(tl);
   Serial.print(" ");
   Serial.print(tr);
   Serial.print(" ");
@@ -125,49 +147,68 @@ int dhoriz = avl - avr;  //difference of right and left
   Serial.print(servoh);
   Serial.println(" ");
 
-//vertical servo and sensors
-  if (abs(tol)<abs(dvert)) {   //if the absolute value of dvert is bigger than the tolerance
-    if (avt > avb) {         
-      servov = ++servov;        //servo should be going up
-      if (servov > servovLimitHigh) {  // servo angle should not be bigger than the maximum angle
-       servov = servovLimitHigh;  
+
+  // when the absolute value of difference of vertical is bigger than tolerance's
+  if (abs(tol) < abs(dvert)){
+    if (avt > avb) {
+      servov = ++servov;
+      if (servov > servovLimitHigh) {
+        servov = servovLimitHigh;
       }
     }
-    else if (avt < avb) {  
-      servov = --servov;   // servo should be going down
-      if (servov < servovLimitLow) {  //servo should not be smaller than the minimum angle
+    else if (avt < avb) {
+      servov = --servov;
+      if (servov < servovLimitLow) {
         servov = servovLimitLow;
       }
     }
-    else if(avt =avb ) {
-    }
-    vertical.write(servov);
+    vertical.write(servov*8+750);
   }
 
- 
-  if (abs(tol)<abs(dhoriz)); { //if the absolute value of dhoriz is bigger than the tolerance
-    if (avl > avr){ 
-      servoh = --servoh;  //horizontal servo should be going down
-      if (servoh < servohLimitLow) {  // servo anlge should not be bigger than the minimum angle
+  // when the absolute value of the difference of horizontall is bigger than tolerance's.
+  if (abs(tol) < abs(dhoriz)); {
+    if (avl > avr) {
+      servoh = --servoh;
+      if (servoh < servohLimitLow) {
         servoh = servohLimitLow;
       }
     }
-    else if (avl < avr) {  
-      servoh = ++servoh; //vertical servo should be going up
-      if (servoh > servohLimitHigh) {  //servo angle should not be bigger than the maximum anlge
+    else if (avl < avr) {
+      servoh = ++servoh;
+      if (servoh > servohLimitHigh) {
         servoh = servohLimitHigh;
       }
     }
-    else if (avl = avr) {
-    
+    else if (avl == avr) {
+      // nothing
     }
-    horizontal.write(servoh);
+    horizontal.write(servoh*8+750);
   }
   
-  delay(dtime);
+delay(dtime);
   
+int maxValue =0;
+if ( (tr> tl) && (tr> br) && (tr> bl) ){
+  maxValue=tr;
 }
+
+if ( (tl > tr) && (tl > br) && (tl > bl)  ){
+  maxValue=tl;
 }
+
+
+if ( (br > bl) && (br > tr) && (br > tl) ) {
+ maxValue = br;
+}
+
+if( (bl > br) && (bl > tr) && (bl > tl) ){
+  maxValue = bl;
+}
+
+
+mySerial.println(maxValue);
+}
+
 ```
 
 # Bill of Materials
