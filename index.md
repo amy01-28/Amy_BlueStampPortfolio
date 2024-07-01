@@ -20,7 +20,7 @@ Phone stand
 
 
 The code of app to check the phone charging
-![Schematics Image](IMG_7858.JPG)
+![Schematics Image](bluetoothapp1.JPG)
 
 The code of app to  connect bluetooth to the solar tracker with smartphone
 ![Schematics Image](phonestand22.JPG)
