@@ -193,10 +193,15 @@ int dhoriz = avl - avr;  //difference of right and left
    solar usb instruction video
 * https://www.hackster.io/FIELDING/solar-panel-sun-tracker-phone-charger-f669ce
    the idea for combining usb charger circuit and solar tracker
-* https://www.instructables.com/Reading-While-Standing/
-  the smartphone stand for charging
+* https://www.youtube.com/watch?v=EhuqmgimrDo&list=PLj5NnUk28LOclSJcF-SjmyoTu2e8qCgIt&index=4
+  app inventor for bluetooth of LDR sensor reading on phone
 * https://chargehq.net/kb/solar-tracking-settings
-  blutooth
+  app inventor for blutooth connecting smartphone and arduino
+* https://projecthub.arduino.cc/ashraf_minhaj/how-to-use-servotimer2-library-simple-explain-servo-sweep-9bbe4e
+  how to use servotimer2
+* https://projecthub.arduino.cc/ashraf_minhaj/how-to-use-servotimer2-library-simple-explain-servo-sweep-9bbe4e
+  AltoSerial
+
 
 # Starter Project: Arduino Beginner
  <iframe width="560" height="315" src="https://www.youtube.com/embed/LpYfZG2CoQc?si=6JxsjkRi9CZVnVa_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
