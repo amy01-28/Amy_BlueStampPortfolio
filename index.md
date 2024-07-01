@@ -53,7 +53,7 @@ I will fix the problem in the servo so that it can rotate depending on the senso
 
 
 # Schematics 
-![Schematics Image](finaldualaxis.JPG)
+![Schematics Image](dualaxis1.JPG)
 
 ![Schematics Image](solarusbcircuit.JPG)
 
