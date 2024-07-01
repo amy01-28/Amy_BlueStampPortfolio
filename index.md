@@ -10,6 +10,7 @@ It is the tracker which detects where the sun light shines so that it can conver
 
 <!---**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.** -->
 
+![Schematics Image](IMG_7858.JPG)
 
 # Modification
 For modification, I added smartphone stand to make easier to charge the device using the solar power from the solar panel. For the smartphone stand, there is a hole on the bottom and the back of it so that the charging usb circuit and wires can be inserted and it looks clean. Also, I can see the value of sunlight, the chart of the sunlight for a whole day, and smartphone charging status to make sure the smartphone is charged using the solar power on the smartphone. I made my own app using the mit app inventor by coding. 
