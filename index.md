@@ -18,7 +18,7 @@ For modification, I designed and printed smartphone stand by using Fusino 360 to
 
 The code of the app for the value of the sunlight
 
-![Schematics Image](Screenshot(16).png)
+![Schematics Image](Screenshot(16).PNG)
 
 
 
