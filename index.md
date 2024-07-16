@@ -24,11 +24,12 @@ Design of the Phone stand
 The code of app to check the battery state of the charged device
 ![Schematics Image](appbatterycharging.PNG)
 
-The code of app to connect bluetooth to the solar tracker with device
+
+The code of the app for the value of the sunlight
 ![Schematics Image](phonestand22.JPG)
 
 
-The code of the app for the value of the sunlight
+The code of app to connect bluetooth to the solar tracker with device
 ![Schematics Image](bluetooth.PNG)
 
 
