@@ -13,7 +13,8 @@ It is the tracker detecting where the sun light is shining so that it can conver
 ![Schematics Image](headshot.PNG)
 
 # Modification
-For modification, I designed and printed smartphone stand by using Fusino 360 to make more comfortable to charge the device using the solar energy. For the smartphone stand, there are each holes on the bottom and the back of it so that the charging usb circuit and wires can go through them and it looks clean. Also, I made my own app for the solar tracker so that I can see some information if it operates in the right way. Using the MIT app inventor website, I coded to add the function of my own app such as the function of blutooth, the function to check the battery sate of the charged device, and the function of checking the value of the sunlight. When the smartphone is connected to the solar tracaker, sunlight, battery state, and the bluetooth state are displayed on the smartphone. Because the MIT app inventor was new to me, it was difficult to start to make the code of the app, I searched it up on the youtube to refer to and practiced other basic things to get used to it. 
+For modification, I designed and printed smartphone stand by using Fusino 360 to make more comfortable to charge the device using the solar energy. For the smartphone stand, there are each holes on the bottom and the back of it so that the charging usb circuit and wires can go through them and it looks clean. Also, I made my own app for the solar tracker so that I can see some information if it operates in the right way. Using the MIT app inventor website, I coded to add the function of my own app such as the function of blutooth, the function to check the battery sate of the charged device, and the function of checking the value of the sunlight. When the smartphone is connected to the solar tracaker, sunlight, battery state, and the bluetooth state are displayed on the smartphone. Because the MIT app inventor was new to me, it was difficult to start to make the code of the app, I searched it up on the youtube to refer to and practiced other basic things to get used to it. In addition to it, the most difficult challenge was the coding. The code seems to not have any error. It was working well before but it was suddnely not working. However, I figured out that there is the difference from adding the " 
+ mySerial.println(maxValue); " and removing it. The one without it operates well but whenever I add it, the servo is moving in the direction of the sunlight but not smoothly. The problem was "Servo library" and "Serial library". After I changed from them to " ServoTimer2 library" and " AltoSerail", te servos are wokring smoothly.  When the servo motor and sensor is controlled, timing is important factor. The subtle difference of timing between timer and serial would be the problem. AltoSErial library is implementing Serial by Software instead of hardware UART which Serial library uses. Also ServoTimer2 library using another timer or forms the servo signal by software while the Servo library is using the hardware timer, which could cuase the collision because the timer is limited n the Arudino board. 
 
 Design of the Phone stand
 ![Schematics Image](phonestand2.JPG)
@@ -228,23 +229,25 @@ mySerial.println(maxValue);
           instruction for solar tracker kit
   
 * https://www.instructables.com/Dual-Axis-Tracker-V20/
-   more information and explanation about solar tracker
+      more information and explanation about solar tracker
 * https://learn.browndoggadgets.com/Guide/Solar+USB+Charger+2.0/6?lang=en
-  instruction for solar usb box kit
+      instruction for solar usb box kit
 * https://www.instructables.com/Solar-USB-Charger-20-21/
-  more information and explanation about solar solar usb charger box kit
+      more information and explanation about solar solar usb charger box kit
 * https://www.youtube.com/watch?v=C6vZFio-rkw&t=475s
-   solar usb instruction video
+      solar usb instruction video
 * https://www.hackster.io/FIELDING/solar-panel-sun-tracker-phone-charger-f669ce
-   the idea for combining usb charger circuit and solar tracker
+      the idea for combining usb charger circuit and solar tracker
+* https://youtu.be/QwvFmIDGMGc?si=tnug5YX6GWzp7fTo
+      app inventor for battery state on phone
 * https://www.youtube.com/watch?v=EhuqmgimrDo&list=PLj5NnUk28LOclSJcF-SjmyoTu2e8qCgIt&index=4
-  app inventor for bluetooth of LDR sensor reading on phone
+      app inventor for bluetooth of LDR sensor reading on phone
 * https://chargehq.net/kb/solar-tracking-settings
-  app inventor for blutooth connecting smartphone and arduino
+      app inventor for blutooth connecting smartphone and arduino
 * https://projecthub.arduino.cc/ashraf_minhaj/how-to-use-servotimer2-library-simple-explain-servo-sweep-9bbe4e
-  how to use servotimer2
+      how to use servotimer2
 * https://projecthub.arduino.cc/ashraf_minhaj/how-to-use-servotimer2-library-simple-explain-servo-sweep-9bbe4e
-  AltoSerial
+      AltoSerial
 
 
 # Starter Project: Arduino Beginner
