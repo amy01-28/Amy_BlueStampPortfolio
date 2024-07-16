@@ -29,6 +29,7 @@ The code of app to connect bluetooth to the solar tracker with device
 
 
 The code of the app for the value of the sunlight
+
 ![Schematics Image](Screenshot(16).png)
 
 
