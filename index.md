@@ -26,10 +26,8 @@ The code of app to check the battery state of the charged device
 The code of app to connect bluetooth to the solar tracker with device
 ![Schematics Image](phonestand22.JPG)
 
-The coe of app to check the value of sunlight 
-
 The code of the app for the value of the sunlight
-![Schematics Image](Screenshot_20240701-163336.jpg)
+![Schematics Image](app of the code for sunligh.PNG)
 
 # Final Milestone
 <iframe width="560" height="315" src="https://www.youtube.com/embed/F-98sx0Hl4M?si=xLZvhWE17DNHBbtE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
