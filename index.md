@@ -1,5 +1,5 @@
 # Solar Tracker
-It is the tracker which detects where the sun light shines so that it can convert from the solar energy to eletric energy. It have the function to charge it, so you can charge the smartphone battery only using the solar energy. Also, you can check the other information about the environment such as the temperature or humidity things. 
+It is the tracker detecting where the sun light is shining so that it can convert from the solar energy that it accumulated on solar panel to eletric energy. Using the electric energy, you can charge any devices. Also, there is the bluetooth fucntion added to the solar tracker so that you can connecet the smartphone with the solar tracker. You can check the other information how the solar tracker works such as the battery state of the charged device and value of the light decided as the highest light among 4 of sensors.
 
 <!---This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were.-->
 
@@ -13,25 +13,28 @@ It is the tracker which detects where the sun light shines so that it can conver
 ![Schematics Image](headshot.PNG)
 
 # Modification
-For modification, I added smartphone stand to make easier to charge the device using the solar power from the solar panel. For the smartphone stand, there is a hole on the bottom and the back of it so that the charging usb circuit and wires can be inserted and it looks clean. Also, I can see the value of sunlight, the chart of the sunlight for a whole day, and smartphone charging status to make sure the smartphone is charged using the solar power on the smartphone. I made my own app using the mit app inventor by coding. 
+For modification, I designed and printed smartphone stand by using Fusino 360 to make more comfortable to charge the device using the solar energy. For the smartphone stand, there are each holes on the bottom and the back of it so that the charging usb circuit and wires can go through them and it looks clean. Also, I made my own app for the solar tracker so that I can see some information if it operates in the right way. Using the MIT app inventor website, I coded to add the function of my own app such as the function of blutooth, the function to check the battery sate of the charged device, and the function of checking the value of the sunlight. When the smartphone is connected to the solar tracaker, sunlight, battery state, and the bluetooth state are displayed on the smartphone. Because the MIT app inventor was new to me, it was difficult to start to make the code of the app, I searched it up on the youtube to refer to and practiced other basic things to get used to it. 
 
-Phone stand
+Design of the Phone stand
 ![Schematics Image](phonestand2.JPG)
 
-
-The code of app to check the phone charging
+ 
+The code of app to check the battery state of the charged device
 ![Schematics Image](appbatterycharging.PNG)
 
-The code of app to  connect bluetooth to the solar tracker with smartphone
+The code of app to connect bluetooth to the solar tracker with device
 ![Schematics Image](phonestand22.JPG)
 
+
+
+The code of the app for the value of the sunlight
 ![Schematics Image](Screenshot_20240701-163336.jpg)
 
 # Final Milestone
 <iframe width="560" height="315" src="https://www.youtube.com/embed/F-98sx0Hl4M?si=xLZvhWE17DNHBbtE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-The goal for the final milestone is to make the solar tracker available to charge phone. My project is basically tracking sunshine and converting solar power to electrical power. After 4 of the sensors on the top left, top right, bottom left, and bottom right are detecting the sunshine. Whenever they detect the sunshine, the value of numbers they measured are used for calculating and the computer decided which servo should be moving which direction according to the code. When the solar tracker is facing the sun, the solar power from the solar panel is converted to electrical energy so that I can charge an device using the charging usb circuit connected to the wire on the solar panel. 
-The challenge in this milestone was weak connection between usb circuit and solar panel. Even though I soldered in the right way, the multimeter is saying that is wrong. The problem was the little amount of lead between negative and positive terminal on the usb circuit. Because of that, I replaced it with new one and add pin to make sure the connection strong. 
+The goal for the final milestone is to make the solar tracker available to charge phone. My project is basically tracking sunshine and converting solar power to electrical power. After 4 of the sensors on the top left, top right, bottom left, and bottom right are detecting the sunshine, the value of them measured in the arduino code are used for calculating and the computer decided which servo should be moving and which direction it should move according to the code. When the solar tracker is facing the sun in the appropriate position, the solar power accumulated on the solar panel is converted to electrical energy so that the device can be charged using the charging usb circuit connected to the solar panel. 
+The challenge in this milestone was weak connection between usb circuit and solar panel. Even though I soldered in the right way, the multimeter is saying that is wrong. The problem was the little amount of lead between negative and positive terminal on the usb circuit. Because of that, I replaced it with new one and added pin to make sure the connection strong. 
 -->
 
 
