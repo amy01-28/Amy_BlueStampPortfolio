@@ -16,6 +16,12 @@ It is the tracker detecting where the sun light is shining so that it can conver
 For modification, I designed and printed smartphone stand by using Fusino 360 to make more comfortable to charge the device using the solar energy. For the smartphone stand, there are each holes on the bottom and the back of it so that the charging usb circuit and wires can go through them and it looks clean. Also, I made my own app for the solar tracker so that I can see some information if it operates in the right way. Using the MIT app inventor website, I coded to add the function of my own app such as the function of blutooth, the function to check the battery sate of the charged device, and the function of checking the value of the sunlight. When the smartphone is connected to the solar tracaker, sunlight, battery state, and the bluetooth state are displayed on the smartphone. Because the MIT app inventor was new to me, it was difficult to start to make the code of the app, I searched it up on the youtube to refer to and practiced other basic things to get used to it. In addition to it, the most difficult challenge was the coding. The code seems to not have any error. It was working well before but it was suddnely not working. However, I figured out that there is the difference from adding the " 
  mySerial.println(maxValue); " and removing it. The one without it operates well but whenever I add it, the servo is moving in the direction of the sunlight but not smoothly. The problem was "Servo library" and "Serial library". After I changed from them to " ServoTimer2 library" and " AltoSerail", te servos are wokring smoothly.  When the servo motor and sensor is controlled, timing is important factor. The subtle difference of timing between timer and serial would be the problem. AltoSErial library is implementing Serial by Software instead of hardware UART which Serial library uses. Also ServoTimer2 library using another timer or forms the servo signal by software while the Servo library is using the hardware timer, which could cuase the collision because the timer is limited n the Arudino board. 
 
+The code of the app for the value of the sunlight
+
+![Schematics Image](Screenshot(16).png)
+
+
+
 Design of the Phone stand
 ![Schematics Image](phonestand2.JPG)
 
@@ -28,9 +34,6 @@ The code of app to connect bluetooth to the solar tracker with device
 
 
 
-The code of the app for the value of the sunlight
-
-![Schematics Image](Screenshot(16).png)
 
 
 # Final Milestone
